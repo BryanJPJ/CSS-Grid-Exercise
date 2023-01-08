@@ -1,0 +1,40 @@
+#container {
+    padding: 100px;
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-rows: 100px 100px 100px 100px;
+    grid-column-gap: 10px;
+   grid-row-gap: 5px;
+   overflow: hidden;
+   
+}
+div img{
+    inline-size: 100%;
+    height: calc(100% - 35px);
+    /* align-items: stretch; */
+}
+
+img {
+    object-fit: contain;
+    border-style:groove;
+    border-color: black;
+  }
+
+.item1{
+    grid-column: span 2;
+    border-style:groove;
+    border-color: black;
+}
+.item2{
+    grid-column: span 2;
+}
+.item5 {
+    grid-row: span 2;
+}
+.item7 {
+    grid-column: span 2;
+}
+.item10 {
+    grid-column: span 2;
+}
